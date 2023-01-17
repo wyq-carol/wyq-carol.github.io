@@ -1,7 +1,7 @@
 # Site settings
 title:          Carol's Blog
 description:    "Opportunitiy knocks but once."
-# baseurl:        "/wyq-carol"
+# baseurl:        "/tale"
 url:            "https://wyq-carol.github.io"
 remote_theme:   chesterhow/tale
 
