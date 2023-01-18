@@ -1,10 +1,11 @@
 .tags {
   &-header {
     &-title {
-      color: $default-shade;
+      color: $white;
       font-family: $sans-serif;
       font-size: 4rem;
       margin: 1rem 0;
+      padding: 56px 0px 120px 0px;
       text-align: center;
     }
 

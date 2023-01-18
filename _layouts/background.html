@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  {% include head.html %}
+
+  <body>
+    {% if {{page.title}} == "Carol's Blog": %}
+        <div class="tags-header" style="background:url(../assets/bkg/home.jpg);">
+            {% include navigation.html %}
+            <h2 class="tags-header-title">{{ page.title }}</h2>
+        </div>
+    {% elsif {{page.title}} == "Tags": %}
+    <div class="tags-header" style="background:url(../assets/bkg/tags.jpg);">
+        {% include navigation.html %}
+        <h2 class="tags-header-title">{{ page.title }}</h2>
+    </div>
+    {% elsif {{page.title}} == "About": %}
+    <div class="tags-header" style="background:url(../assets/bkg/about.jpg);;">
+        {% include navigation.html %}
+        <h2 class="tags-header-title">{{ page.title }}</h2>
+    </div>
+    {% else: %}
+        {% include navigation.html %}
+    {% endif %}
+    <main>
+      {{ content }}
+    </main>
+
+    {% include footer.html %}
+  </body>
+</html>

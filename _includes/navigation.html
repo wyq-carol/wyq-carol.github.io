@@ -1,12 +1,22 @@
 <nav class="nav">
   <div class="nav-container">
     <a href="{{ site.baseurl }}/">
-      <h2 class="nav-title">{{ site.title }}</h2>
+      {% if ({{page.title}} == "Carol's Blog" or {{page.title}} == "Tags" or {{page.title}} == "About"): %}
+        <h2 class="nav-title" style="color: white;">{{ site.title }}</h2>
+      {% else: %}
+        <h2 class="nav-title" style="color: black;">{{ site.title }}</h2>
+      {% endif %}
     </a>
     <ul>
-      <li><a href="{{ site.baseurl }}/">Posts</a></li>
-      <li><a href="{{ '/tags' | prepend: site.baseurl }}">Tags</a></li>
-      <li><a href="{{ '/about' | prepend: site.baseurl }}">About</a></li>
+      {% if {{page.title}} == "Carol's Blog" or {{page.title}} == "Tags" or {{page.title}} == "About": %}
+        <li><a href="{{ site.baseurl }}/" style="color: white;">Posts</a></li>
+        <li><a href="{{ '/tags' | prepend: site.baseurl }}" style="color: white;">Tags</a></li>
+        <li><a href="{{ '/about' | prepend: site.baseurl }}" style="color: white;">About</a></li>
+      {% else: %}
+        <li><a href="{{ site.baseurl }}/" style="color: black;">Posts</a></li>
+        <li><a href="{{ '/tags' | prepend: site.baseurl }}" style="color: black;">Tags</a></li>
+        <li><a href="{{ '/about' | prepend: site.baseurl }}" style="color: black;">About</a></li>
+      {% endif %}
     </ul>
   </div>
 </nav>
