@@ -9,13 +9,13 @@
     </a>
     <ul>
       {% if {{page.title}} == "Carol's Blog" or {{page.title}} == "Tags" or {{page.title}} == "About": %}
-        <li><a href="{{ site.baseurl }}/" style="color: white;">Posts</a></li>
-        <li><a href="{{ '/tags' | prepend: site.baseurl }}" style="color: white;">Tags</a></li>
-        <li><a href="{{ '/about' | prepend: site.baseurl }}" style="color: white;">About</a></li>
+        <li><a href="{{ site.baseurl }}/" style="color: white;font-weight: bold;">Posts</a></li>
+        <li><a href="{{ '/tags' | prepend: site.baseurl }}" style="color: white;font-weight: bold;">Tags</a></li>
+        <li><a href="{{ '/about' | prepend: site.baseurl }}" style="color: white;font-weight: bold;">About</a></li>
       {% else: %}
-        <li><a href="{{ site.baseurl }}/" style="color: black;">Posts</a></li>
-        <li><a href="{{ '/tags' | prepend: site.baseurl }}" style="color: black;">Tags</a></li>
-        <li><a href="{{ '/about' | prepend: site.baseurl }}" style="color: black;">About</a></li>
+        <li><a href="{{ site.baseurl }}/" style="color: black;font-weight: bold;">Posts</a></li>
+        <li><a href="{{ '/tags' | prepend: site.baseurl }}" style="color: black;font-weight: bold;">Tags</a></li>
+        <li><a href="{{ '/about' | prepend: site.baseurl }}" style="color: black;font-weight: bold;">About</a></li>
       {% endif %}
     </ul>
   </div>

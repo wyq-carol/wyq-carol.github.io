@@ -5,17 +5,17 @@
 
   <body>
     {% if {{page.title}} == "Carol's Blog": %}
-        <div class="tags-header" style="background:url(../assets/bkg/home.jpg);">
+        <div class="tags-header" style="font-weight: bold;background:url(../assets/bkg/home.jpg);">
             {% include navigation.html %}
             <h2 class="tags-header-title">{{ page.title }}</h2>
         </div>
     {% elsif {{page.title}} == "Tags": %}
-    <div class="tags-header" style="background:url(../assets/bkg/tags.jpg);">
+    <div class="tags-header" style="font-weight: bold;background:url(../assets/bkg/tags.jpg);">
         {% include navigation.html %}
         <h2 class="tags-header-title">{{ page.title }}</h2>
     </div>
     {% elsif {{page.title}} == "About": %}
-    <div class="tags-header" style="background:url(../assets/bkg/about.jpg);;">
+    <div class="tags-header" style="font-weight: bold;background:url(../assets/bkg/about.jpg);;">
         {% include navigation.html %}
         <h2 class="tags-header-title">{{ page.title }}</h2>
     </div>
