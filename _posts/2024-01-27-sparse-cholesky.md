@@ -2,11 +2,24 @@
 layout: post
 title: "My first blog"
 author: "wyq-carol"
-tags: Example
+tags: Algebra
 excerpt_separator: <!--more-->
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tincidunt ornare nibh, non elementum augue tempus eget. Pellentesque tempus scelerisque iaculis.<!--more--> Nullam interdum ultricies nibh quis sollicitudin. Donec ornare fermentum facilisis. Ut at sem ac sem imperdiet varius a eget tortor. Nam eu augue eget orci semper maximus in eget augue. Mauris ornare, nisl ut suscipit consectetur, mi quam interdum tellus, at rutrum quam eros ultrices mi.
+
+# Up-Looking Cholesky
+
+$\left(\begin{matrix}l_{11} & 0 & 0 \\ l_{12} & l_{22} & 0 \\ l_{13} & l_{23} & l_{33} \end{matrix}\right)\left(\begin{matrix}l_{11} & l_{12} & l_{13} \\ 0 & l_{22} & l_{23} \\ 0 & 0 & l_{33} \end{matrix}\right) = \left(\begin{matrix} a_{11} & a_{12} & a_{13} \\ a_{12} & a_{22} & a_{23} \\ a_{13} & a_{23} & a_{33} \end{matrix}\right)$
+
+1. $\left(\begin{matrix} l_{11} \end{matrix}\right)\left(\begin{matrix} l_{11} \end{matrix}\right) = \left(\begin{matrix} a_{11} \end{matrix}\right)$ 
+   * $l_{11} ^2 = a_{11}$ 解 $l_{11}$
+2. $\left(\begin{matrix} l_{11} & 0 \\ l_{12} & l_{22} \end{matrix}\right) \left(\begin{matrix} l_{11} & l_{12} \\ 0 & l_{22} \end{matrix}\right) = \left(\begin{matrix} a_{11} & a_{12} \\ a_{12} & a_{22} \end{matrix}\right)$
+   * $\left(\begin{matrix} l_{12} \end{matrix}\right)\left(\begin{matrix} l_{11} \end{matrix}\right) = \left(\begin{matrix} a_{12} \end{matrix}\right)$ 解 $l_{12}$
+   * $l_{12}^2+l_{22} ^2 = a_{22}$ 解 $l_{22}$
+3. $\left(\begin{matrix}l_{11} & 0 & 0 \\ l_{12} & l_{22} & 0 \\ l_{13} & l_{23} & l_{33} \end{matrix}\right)\left(\begin{matrix}l_{11} & l_{12} & l_{13} \\ 0 & l_{22} & l_{23} \\ 0 & 0 & l_{33} \end{matrix}\right) = \left(\begin{matrix} a_{11} & a_{12} & a_{13} \\ a_{12} & a_{22} & a_{23} \\ a_{13} & a_{23} & a_{33} \end{matrix}\right)$
+   * $\left(\begin{matrix} l_{13} & l_{23} \end{matrix}\right) \left(\begin{matrix} l_{11} & l_{12} \\ 0 & l_{22} \end{matrix}\right) = \left(\begin{matrix} a_{13} & a_{23} \end{matrix}\right)$ 解 $l_{13}$ $l_{23}$ （同 $xb = y$ 已知 $b,y$ 求 $x$）
+   * $l_{13}^2+l_{23} ^2+l_{33} ^2= a_{33}$ 解 $l_{33}$
 
 # Headers
 
