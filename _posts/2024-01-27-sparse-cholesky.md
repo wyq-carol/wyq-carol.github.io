@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "My first blog"
+title: "Sparse Cholesky"
 author: "wyq-carol"
 tags: Algebra
 excerpt_separator: <!--more-->
@@ -10,7 +10,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tincidunt orna
 
 # Up-Looking Cholesky
 
-$\left(\begin{matrix}l_{11} & 0 & 0 \\ l_{12} & l_{22} & 0 \\ l_{13} & l_{23} & l_{33} \end{matrix}\right)\left(\begin{matrix}l_{11} & l_{12} & l_{13} \\ 0 & l_{22} & l_{23} \\ 0 & 0 & l_{33} \end{matrix}\right) = \left(\begin{matrix} a_{11} & a_{12} & a_{13} \\ a_{12} & a_{22} & a_{23} \\ a_{13} & a_{23} & a_{33} \end{matrix}\right)$
+$$\left(\begin{matrix}l_{11} & 0 & 0 \\ l_{12} & l_{22} & 0 \\ l_{13} & l_{23} & l_{33} \end{matrix}\right)\left(\begin{matrix}l_{11} & l_{12} & l_{13} \\ 0 & l_{22} & l_{23} \\ 0 & 0 & l_{33} \end{matrix}\right) = \left(\begin{matrix} a_{11} & a_{12} & a_{13} \\ a_{12} & a_{22} & a_{23} \\ a_{13} & a_{23} & a_{33} \end{matrix}\right)$$
 
 1. $\left(\begin{matrix} l_{11} \end{matrix}\right)\left(\begin{matrix} l_{11} \end{matrix}\right) = \left(\begin{matrix} a_{11} \end{matrix}\right)$ 
    * $l_{11} ^2 = a_{11}$ 解 $l_{11}$

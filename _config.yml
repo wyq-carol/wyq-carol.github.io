@@ -41,3 +41,7 @@ exclude: [ Gemfile, Gemfile.lock, tale.gemspec ]
 
 # Disqus (Set to your disqus id)
 disqus:         jekyll-tale
+
+# math support
+kramdown:
+  math_engine: MathJax
