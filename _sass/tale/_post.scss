@@ -1,5 +1,6 @@
 .post {
-  padding: 3rem 0;
+    font-family: Consolas, $sans-serif;
+    padding: 3rem 0;
 
   &-info {
     color: $default-tint;
@@ -14,8 +15,9 @@
 
   &-title {
     color: $default-shade;
-    font-family: $sans-serif;
-    font-size: 4rem;
+    // font-family: $sans-serif;
+    font-family: Consolas, $sans-serif;
+    font-size: 3rem;
     margin: 1rem 0;
     text-align: center;
   }
@@ -30,6 +32,16 @@
   p {
     margin: 0 0 1rem;
     text-align: justify;
+  }
+
+  h1 {
+    font-family: Consolas, $sans-serif;
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-family: Consolas, $sans-serif;
+    font-size: 1.5rem;
   }
 
   a:hover {

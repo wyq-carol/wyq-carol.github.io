@@ -44,4 +44,4 @@ disqus:         jekyll-tale
 
 # math support
 kramdown:
-  math_engine: MathJax
+  math_engine: mathjax
